@@ -1,0 +1,82 @@
+---
+label: Navbar
+hide_body: false
+fields:
+- name: links
+  type: field_group_list
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: Name
+  - name: use_direct_url
+    type: boolean
+    label: Use Direct URL
+  - name: page
+    type: select
+    default: ''
+    config:
+      required: false
+      options: []
+      source:
+        type: pages
+        section: 
+        file: 
+        path: 
+    label: Page
+    showOnly:
+      field: use_direct_url
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+    showOnly:
+      field: use_direct_url
+      value: true
+  - name: sub_pages
+    type: field_group_list
+    fields:
+    - name: name
+      type: text
+      config:
+        required: false
+      label: Name
+    - name: use_direct_url
+      type: boolean
+      label: Use Direct URL
+    - name: page
+      type: select
+      default: ''
+      config:
+        required: false
+        options: []
+        source:
+          type: pages
+          section: 
+          file: 
+          path: 
+      label: Page
+      showOnly:
+        field: use_direct_url
+    - name: url
+      type: text
+      config:
+        required: false
+      label: URL
+      showOnly:
+        field: use_direct_url
+        value: true
+    config:
+      min: 
+      max: 
+      labelField: 
+    label: Sub-pages
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Links
+pages:
+- static/_settings/navbar.md

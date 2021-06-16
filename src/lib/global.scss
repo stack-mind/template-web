@@ -1,0 +1,33 @@
+@import "./mq";
+
+:root {
+	--primary: #fcdad4;
+	--text: #1e141c;
+}
+
+body {
+	margin: 0;
+}
+
+hr {
+	background-color: var(--primary);
+	border: none;
+	height: 2px;
+	margin: 32px 0;
+}
+
+a {
+	color: var(--primary);
+	text-decoration-color: var(--primary);
+}
+
+blockquote {
+	border-left: 2px solid var(--primary);
+	margin: 16px 0;
+	padding: 0 40px;
+}
+
+.container {
+	max-width: 1300px;
+	margin: auto;
+}
