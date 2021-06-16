@@ -1,24 +1,18 @@
-# create-svelte
+# StackMind Web Template
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+This is a base template to get started building a static website.
 
-## Creating a project
+It uses the following technologies:
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```bash
-# create a new project in the current directory
-npm init svelte@next
-
-# create a new project in my-app
-npm init svelte@next my-app
-```
-
-> Note: the `@next` is temporary
+- [svelte-kit](https://kit.svelte.dev/)
+- [forestry](https://forestry.io/)
+- [typescript](https://www.typescriptlang.org/)
+- [sass](https://sass-lang.com/)
+- [pnpm](https://pnpm.io/)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've created a project and installed dependencies with `pnpm install`, start a development server:
 
 ```bash
 npm run dev
@@ -29,7 +23,9 @@ npm run dev -- --open
 
 ## Building
 
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
+By default, this template uses the [static adapter](https://www.npmjs.com/package/@sveltejs/adapter-static).
+
+If you need a different adapter, see [adapters](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
 
 ```bash
 npm run build
